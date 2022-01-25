@@ -80,11 +80,11 @@ public class question1to5 {
 		double meterPerSec=distance/(hrstosec+mintosec+sec) ;
 		System.out.println(distance+ " "+hours );
 		System.out.println("meter per second : "+meterPerSec);
-		double kmperhr =(distance*0.001)/hours;
+		double kmperhr =(distance*0.001)/((hrstosec+mintosec+sec)/3600);
 		System.out.println("km per hr "+ kmperhr);
-		double milesPerHr= (distance*0.00062)/hours;
+		double milesPerHr= (distance*0.00062)/((hrstosec+mintosec+sec)/3600);
 		System.out.println("miles per hr "+milesPerHr);
-		//double meterPerMin=distance/(h)
+		
 	}
 	
 }
